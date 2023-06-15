@@ -4,11 +4,10 @@ from tkinter import *
 import os
 import customtkinter
 from PIL import ImageTk, Image
- 
+
+root = Tk()
 # Designing the main screen
 def main_screen():
-    global root
-    root = Tk()
     root.geometry("500x800")
     main_frame = Frame(root,bg ='#020202')
     main_frame.pack(padx=20)
@@ -19,6 +18,15 @@ def main_screen():
     root.title("Account Login")
     top_text=Label(root,text="Welcome to FitQuest",bg="#020202",font=("Calibri", 45))
     top_text.pack(pady=0, anchor =tkinter.CENTER)
+    
+    def register():
+        root.destroy()
+        import register
+    
+    def login():
+        root.destroy()
+        import login
+    
     #Login button 
     Login_button = customtkinter.CTkButton(master=root, text="Login", command=login, height = 35, width = 250,bg_color="#020202")
     Login_button.place(relx=0.48, rely=0.3, anchor=tkinter.CENTER)
@@ -33,10 +41,30 @@ def main_screen():
  
     root.mainloop()
 
-def login():
+
+
+    
+
+ 
+ 
+
+def password_not_recog_screen():
     pass
 
-def register():
+def user_not_found_screen():
     pass
+
+# Deleting popups
+
+ # Deleting popups
+def delete_password_not_recognised():
+    password_not_recog_screen.destroy()
+# Deleting popups
+def delete_user_not_found_screen():
+    user_not_found_screen.destroy()
+
+def delete_main_screen():
+    main_screen.destroy()
+ 
 
 main_screen()
