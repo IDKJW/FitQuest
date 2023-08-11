@@ -1,6 +1,9 @@
 # FitQuest App
 ![Logo (1)](https://github.com/IDKJW/FitQuest/assets/124316245/3f5ef78e-326b-46f3-9daa-d7dc2561f7d2)
 
+
+
+
 Welcome to FitQuest App
 FitQuest app is a all in one gym app designed to help you achieve your fitness goals with ease and bringing down the obesity rate in New Zealand. If you are looking to build muscle or lose weight or imporve overall health, you have choose the right app. FitQuest provides all the tools you need and guide your way to success. 
 
@@ -12,7 +15,9 @@ FitQuest app is a all in one gym app designed to help you achieve your fitness g
 ## How it works?
 1. The progarm require you to register a new account to login into the app.
 2. Then click on the either diet plan or workout buttuon
-3. It will take you to the deit plan page or the workout page to choose the excerise that you want to do. 
+3. It will take you to the deit plan page or the workout page to choose the excerise that you want to do.
+
+[How does it work.webm](https://github.com/IDKJW/FitQuest/assets/124316245/b43299c8-8e57-45d2-8a46-79141f4983c2)
 
 ## To install the app
 1. Click on the '<>code' green button
