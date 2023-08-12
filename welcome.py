@@ -25,7 +25,7 @@ class WelcomeApp:
         # Create a font
         custom_font = font.Font(family="Helvetica", size=20, weight="bold")
         small_custom_font = font.Font(
-            family="Helvetica", size=15, weight="bold")
+            family="Helvetica", size=13, weight="bold")
 
         # Create a Canvas
         self.canvas = Canvas(self.root, width=500, height=800)
@@ -39,7 +39,7 @@ class WelcomeApp:
 
         # Create a skyblue background for the text
         self.background_rectangle = self.canvas.create_rectangle(
-            100, 80, 400, 600, fill="sky blue")
+            100, 80, 400, 600, fill="#4B9CD3")
 
         # Create a text for Welcome to FitQuest
         self.canvas.create_text(
