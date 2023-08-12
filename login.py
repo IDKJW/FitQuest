@@ -29,7 +29,7 @@ class LoginApp:
         # create font
         custom_font = font.Font(family="Helvetica", size=20, weight="bold")
         small_custom_font = font.Font(
-            family="Helvetica", size=15, weight="bold")
+            family="Helvetica", size=12, weight="bold")
         
         # Define an image and create background
         self.background = PhotoImage(file="assets/gym_background_2.png")
