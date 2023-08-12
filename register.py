@@ -31,7 +31,7 @@ class RegisterApp:
         global small_custom_font
         custom_font = font.Font(family="Helvetica", size=20, weight="bold")
         small_custom_font = font.Font(
-            family="Helvetica", size=13, weight="bold")
+            family="Helvetica", size=12, weight="bold")
         
 
 
@@ -145,7 +145,7 @@ class RegisterApp:
             borderwidth=0,
             highlightthickness=0,
             height=30,
-            width=100,
+            width=150,
             compound=CENTER,
             command=self.register_user)
         self.register_button_window = self.canvas.create_window(
