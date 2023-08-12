@@ -24,19 +24,18 @@ class WorkoutApp:
         self.python_executable = sys.executable
 
         # Create a frame to hold the buttons
-        button_frame = tk.Frame(self.root)
+        button_frame = tk.Frame(self.root, bg="#4B9CD3")
         button_frame.pack(fill="both", expand=True)
-        
+
         # Create a font
         self.custom_font = font.Font(
             family="Helvetica", size=20, weight="bold")
-        
+
+        # Define image
         self.image_button = PhotoImage(file='assets/button_image.png')
-        
-        
 
         # Create a canvas widget with a scroll bar
-        canvas = tk.Canvas(button_frame)
+        canvas = tk.Canvas(button_frame, bg="#4B9CD3")
         scrollbar = ttk.Scrollbar(
             button_frame,
             orient="vertical",
@@ -46,9 +45,10 @@ class WorkoutApp:
         canvas.pack(side="left", fill="both", expand=True)
 
         # Create a frame inside the canvas for the buttons
-        button_canvas = tk.Frame(canvas)
+        button_canvas = tk.Frame(canvas, bg="#4B9CD3")
         canvas.create_window((0, 0), window=button_canvas, anchor="nw")
-        
+
+        # Back_button
         self.back_button = tk.Button(
             self.root,
             image=self.image_button,
@@ -64,12 +64,11 @@ class WorkoutApp:
             command=self.home)
         self.back_button_window = canvas.create_window(
             50, 50, anchor="center", window=self.back_button)
-        
 
         # Create a text for Wokrout
         top_text = tk.Label(
             button_canvas, text="Workout", font=(
-                "Helvetica", 60))
+                "Helvetica", 60), bg="#4B9CD3")
         top_text.pack()
 
         # Create a text for instructions
@@ -78,7 +77,7 @@ class WorkoutApp:
             text="Click on any button to start your excerise",
             font=(
                 "Helvetica",
-                20))
+                20), bg="#4B9CD3")
         top_text.pack()
 
         # Create workout buttons and outputing the text and the images on the
@@ -156,7 +155,7 @@ class WorkoutApp:
         self.root.destroy()
         # Open back.py using the Python interpreter
         subprocess.Popen([self.python_executable, "back.py"])
-        
+
     # Function for the home button
     def home(self):
         """Destory workout GUI and then import back GUI"""
