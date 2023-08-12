@@ -262,6 +262,10 @@ class DietApp:
                 self.result_label.config(
                     text="Invalid input. \nHeight and weight \nmust be positive numbers.",
                     font=self.small_custom_font)
+            elif height > 1000 or weight > 1000:  # Add this condition to check for numbers over 1000
+                self.result_label.config(
+                text="Invalid input. \nHeight and weight \ncannot be over 1000.",
+                font=self.small_custom_font)
             else:
                 bmi = weight / ((height / 100) ** 2)
                 self.result_label.config(
