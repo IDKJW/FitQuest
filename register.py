@@ -192,14 +192,14 @@ class RegisterApp:
         """Function destroy home GUI and import login GUI"""
         self.root.destroy()
         # Open login.py using the Python interpreter
-        subprocess.Popen([PYTHON_EXECUTABLE, "design/login.py"])
+        subprocess.Popen([PYTHON_EXECUTABLE, "login.py"])
 
     # Function for the welcome button
     def welcome(self):
         """Function destroy home GUI and import welcome GUI"""
         self.root.destroy()
         # Open welcome.py using the Python interpreter
-        subprocess.Popen([PYTHON_EXECUTABLE, "design/welcome.py"])
+        subprocess.Popen([PYTHON_EXECUTABLE, "welcome.py"])
 
     # Function to check the the password
     def check_password_validity(self, *args):
