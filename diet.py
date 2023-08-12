@@ -35,9 +35,9 @@ class DietApp:
 
         # Create a custom font for the text
         self.custom_font = font.Font(
-            family="Helvetica", size=20, weight="bold")
+            family="Helvetica", size=15, weight="bold")
         self.label_font = font.Font(weight="bold")
-        self.small_custom_font = font.Font(family="Helvetica", size=17,)
+        self.small_custom_font = font.Font(family="Helvetica", size=13,)
 
         # Create text in canvas
         self.canvas.create_text(
@@ -171,8 +171,8 @@ class DietApp:
         self.canvas.create_text(
             247,
             710,
-            text="If you want to know       your BMI,\n "
-            "please enter your         height and your body, \nafter that click on the caculate BMI button",
+            text="If you want to know your BMI,\n "
+            "please enter your height and your body, \nafter that click on the caculate BMI button",
             fill="black",
             font=self.small_custom_font)
 
@@ -203,9 +203,9 @@ class DietApp:
             font=self.label_font,
             bg="#4B9CD3",
             fg="black")
-        height_label.place(x=70, y=550)
+        height_label.place(x=40, y=550)
         self.height_entry = tk.Entry(self.canvas)
-        self.height_entry.place(x=200, y=550)
+        self.height_entry.place(x=130, y=550)
 
         # An entry widget for weight
         weight_label = tk.Label(
@@ -214,9 +214,9 @@ class DietApp:
             font=self.label_font,
             bg="#4B9CD3",
             fg="black")
-        weight_label.place(x=70, y=600)
+        weight_label.place(x=40, y=600)
         self.weight_entry = tk.Entry(self.canvas)
-        self.weight_entry.place(x=200, y=600)
+        self.weight_entry.place(x=130, y=600)
 
         # Result label for displaying the BMI
         self.result_label = tk.Label(
@@ -227,7 +227,7 @@ class DietApp:
                 "bold"),
             bg="#4B9CD3",
             fg="black")
-        self.result_label.place(x=250, y=700, anchor="center")
+        self.result_label.place(x=390, y=600, anchor="center")
 
         # Calculate button
         self.calculate_button = Button(
@@ -260,13 +260,17 @@ class DietApp:
 
             if height <= 0 or weight <= 0:
                 self.result_label.config(
-                    text="Invalid input. \nHeight and weight must be positive numbers.")
+                    text="Invalid input. \nHeight and weight \nmust be positive numbers.",
+                    font=self.small_custom_font)
             else:
                 bmi = weight / ((height / 100) ** 2)
-                self.result_label.config(text=f"Your BMI: {bmi:.2f}")
+                self.result_label.config(
+                    text=f"Your BMI: {bmi:.2f}",
+                    font=self.custom_font)
         except ValueError:
             self.result_label.config(
-                text="Invalid input. \nPlease enter valid numbers for height and weight.")
+                text="Invalid input. \nPlease enter valid numbers \nfor height and weight.",
+                font=self.small_custom_font)
 
     # Function for the home button
     def home(self):
