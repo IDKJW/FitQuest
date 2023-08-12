@@ -28,9 +28,12 @@ class RegisterApp:
         self.canvas.pack(fill="both", expand=TRUE)
 
         # Create font
+        global small_custom_font
         custom_font = font.Font(family="Helvetica", size=20, weight="bold")
         small_custom_font = font.Font(
-            family="Helvetica", size=15, weight="bold")
+            family="Helvetica", size=13, weight="bold")
+        
+
 
         # Create a database connection
         self.connection = sqlite3.connect("db/registration.db")
@@ -189,14 +192,14 @@ class RegisterApp:
         """Function destroy home GUI and import login GUI"""
         self.root.destroy()
         # Open login.py using the Python interpreter
-        subprocess.Popen([PYTHON_EXECUTABLE, "login.py"])
+        subprocess.Popen([PYTHON_EXECUTABLE, "design/login.py"])
 
     # Function for the welcome button
     def welcome(self):
         """Function destroy home GUI and import welcome GUI"""
         self.root.destroy()
         # Open welcome.py using the Python interpreter
-        subprocess.Popen([PYTHON_EXECUTABLE, "welcome.py"])
+        subprocess.Popen([PYTHON_EXECUTABLE, "design/welcome.py"])
 
     # Function to check the the password
     def check_password_validity(self, *args):
@@ -232,7 +235,7 @@ class RegisterApp:
         # Check if the password meets requirements
         if self.password_valid.get() == 0:
             self.error_label.config(
-                text="Password does not meet the requirements", fg="red")
+                text="Password does not meet the requirements", font=small_custom_font,fg="red")
             return
 
         # Insert the user into the database
