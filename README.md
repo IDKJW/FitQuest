@@ -23,7 +23,7 @@ FitQuest app is a all in one gym app designed to help you achieve your fitness g
 1. Click on the '<>code' green button
 2. Select download zip
 3. Make sure you have Python install on your progarm
-4. Make sure that you have enable your virtual environment.(Don't know how? https://www.youtube.com/watch?v=GrAYoJUQolo for Window0
+4. Make sure that you have enable your virtual environment.(Don't know how? https://www.youtube.com/watch?v=GrAYoJUQolo for Window users, https://www.youtube.com/watch?v=OSCzB3zg9A4&ab_channel=StudySession for Mac book users0
 5. Install any required for the progarm using `pip install -r requirements.txt`.(If you have Python3 use this `pip3 install -r requirements.txt`)
 6. Open the folder in your progarm
 
