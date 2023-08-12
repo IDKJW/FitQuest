@@ -24,7 +24,7 @@ class HomeApp:
         
         # Create a font
         self.small_custom_font = font.Font(
-            family="Helvetica", size=13, weight="bold")
+            family="Helvetica", size=12, weight="bold")
 
         # Create a Canvas
         self.canvas = Canvas(self.root, width=500, height=800)
