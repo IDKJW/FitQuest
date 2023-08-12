@@ -25,9 +25,9 @@ class ChestExerciseApp:
 
         # Define a font
         self.custom_font = font.Font(
-            family="Helvetica", size=20, weight="bold")
-        self.small_custom_font = font.Font(
             family="Helvetica", size=15, weight="bold")
+        self.small_custom_font = font.Font(
+            family="Helvetica", size=12, weight="bold")
 
         # Create a Canvas
         self.canvas = tk.Canvas(self.root, width=500, height=800)
