@@ -25,9 +25,9 @@ class AbsExerciseApp:
 
         # Define a font
         self.custom_font = font.Font(
-            family="Helvetica", size=20, weight="bold")
-        self.small_custom_font = font.Font(
             family="Helvetica", size=15, weight="bold")
+        self.small_custom_font = font.Font(
+            family="Helvetica", size=12, weight="bold")
 
         # Create a Canvas
         self.canvas = tk.Canvas(self.root, width=500, height=800)
@@ -132,7 +132,7 @@ class AbsExerciseApp:
         if len(self.exercises_shown) == len(self.exercises):
             self.canvas.itemconfig(
                 self.exercise_label,
-                text="All exercises have been shown.")
+                text="All exercises have been shown.", font=self.custom_font)
             self.canvas.itemconfig(self.reps_label, text="")
             self.canvas.itemconfig(self.image_label, image="")
             self.generate_button.config(
