@@ -20,7 +20,7 @@ class CardioExerciseApp:
     def __init__(self):
         # Create the main application window
         self.root = tk.Tk()
-        self.root.title("cardio Exercise")
+        self.root.title("Cardio Exercise")
         self.root.resizable(False, False)
 
         # Define a font
