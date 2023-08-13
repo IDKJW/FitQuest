@@ -164,8 +164,9 @@ class LoginApp:
     # Checking the password and username information in the entry widget
     def valid_credentials(self):
         """This is the functions where the progarm checks the entery widget
-        if it matches the database information,
-        if the user have import it worng then will show an error message
+        if it matches the database information goes to the home screen
+        if the user have input the password or username
+        worng then the progarm will show an error message
         """
         # Get username and password
         username = self.username_verify.get()
