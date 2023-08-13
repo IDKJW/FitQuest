@@ -203,7 +203,7 @@ class RegisterApp:
 
     # Function to check the the password
     def check_password_validity(self, *args):
-        """This function is checking the password reuqiemnt"""
+        """This function is checking the password reuqiemnt with regular expression support"""
         # Can't deleted *args because it is used to pass the requiemnt
         # Get password value
         password_value = self.password.get()
@@ -228,7 +228,9 @@ class RegisterApp:
     # Function to get the passowrd and username
 
     def register_user(self):
-        """Get username and password"""
+        """Get username and password and check if the user has meet the reuqiment
+        Then if the password has meet the requiemnt, the information will be store
+        into the database"""
         username_value = self.username.get()
         password_value = self.password.get()
 
