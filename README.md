@@ -20,9 +20,10 @@ FitQuest app is a all in one gym app designed to help you achieve your fitness g
 3. BMI Caculator: Calculate your body mass index (BMI) to determine your current state of health. To maintain a balanced and healthy lifestyle, set reasonable goals depending on your BMI.
 
 ## How does it works?
-1. The progarm require you to register a new account to login into the app.
-2. Then click on the either diet plan or workout buttuon
-3. It will take you to the deit plan page or the workout page to choose the excerise that you want to do.
+1. Welcome.py is the first page
+2. The progarm require you to register a new account to login into the app.
+3. Then click on the either diet plan or workout buttuon
+4. It will take you to the deit plan page or the workout page to choose the excerise that you want to do.
 
 [How does it work.webm](https://github.com/IDKJW/FitQuest/assets/124316245/b43299c8-8e57-45d2-8a46-79141f4983c2)
 
