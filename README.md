@@ -28,6 +28,6 @@ FitQuest app is a all in one gym app designed to help you achieve your fitness g
 6. Open the folder in your progarm
 
 #### Text 
-The text is kinda small because I am a Mac users. I have user window to test out this progarm. The text was flyign everywhere. So that I have made the text a bit smaller so that Mac and Window users can see a good layout of the progarm. 
+The text is kinda small because I am a Mac users. I have a user's window to test out this progarm. The text was flyign everywhere. So that I have made the text a bit smaller so that Mac and Window users can see a good layout of the progarm. 
 
 ### Feel free to download the progarm and make it better.:>
