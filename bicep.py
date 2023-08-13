@@ -135,8 +135,9 @@ class BicepExerciseApp:
                 text="All exercises have been shown.")
             self.canvas.itemconfig(self.reps_label, text="")
             self.canvas.itemconfig(self.image_label, image="")
+            # Change the button text after all the excerise has been genertated
             self.generate_button.config(
-                text="Well Done")  # Change the button text
+                text="Well Done")
             return
 
         # Get a random exercise that hasn't been shown yet
