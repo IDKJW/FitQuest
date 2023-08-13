@@ -7,6 +7,13 @@
 Welcome to FitQuest App
 FitQuest app is a all in one gym app designed to help you achieve your fitness goals with ease and bringing down the obesity rate in New Zealand. If you are looking to build muscle or lose weight or imporve overall health, you have choose the right app. FitQuest provides all the tools you need and guide your way to success. 
 
+## Before FitQuest made
+![going_up](https://github.com/IDKJW/FitQuest/assets/124316245/33379552-1aeb-4e7b-b9aa-03a095d51f92)
+
+## After FitQuest made
+![going_down](https://github.com/IDKJW/FitQuest/assets/124316245/93eec732-9a57-4c76-8ead-fe7b6dea103d)
+
+
 ## Features
 1. Different Workouts: Have different types of workout for you to choose. From chest to legs excerise and cardio workouts ,FitQuest got you.
 2. Diet plan: There will be tips in the diet plan page that will help to you to lose weight and gain muscle faster.
